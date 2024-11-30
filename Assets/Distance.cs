@@ -9,13 +9,13 @@ public class Distance : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Transform>();
-
+        asd = GetComponent<TextMeshPro>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float Distance = player.position.x;
-        asd.text = "a";
+        asd.text = Distance.ToString();
     }
 }
