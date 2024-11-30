@@ -1,21 +1,22 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Distance : MonoBehaviour
 {
     Transform player;
-    TextMeshPro asd;
+    public Text asd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Transform>();
-        asd = GetComponent<TextMeshPro>();
+    
     }
 
     // Update is called once per frame
     void Update()
     {
         float Distance = player.position.x;
-        asd.text = Distance.ToString();
+        asd.text = "a";
     }
 }
