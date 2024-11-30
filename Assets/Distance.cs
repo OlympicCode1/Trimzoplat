@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class Distance : MonoBehaviour
 {
     Transform player;
-    Text asd;
+    TextMeshPro asd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,6 @@ public class Distance : MonoBehaviour
     void Update()
     {
         float Distance = player.position.x;
-        asd.Text = "a";
+        asd.text = "a";
     }
 }
