@@ -7,7 +7,7 @@ public class Distance : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.Find('Player').GetComponent<Transform>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
 
     }
 
@@ -15,6 +15,6 @@ public class Distance : MonoBehaviour
     void Update()
     {
         float Distance = player.position.x;
-        asd.Text = str(Distance);
+        asd.Text = "a";
     }
 }
